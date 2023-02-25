@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	
+	<script>	
+    function CalculateBMI(){
+      var HeightInFeet=document.getElementById("HeightFeet").value;
+      console.log(HeightInFeet);
+      var HeightInInches=document.getElementById("HeightInches").value;
+      console.log(HeightInInches);
+      var Height=HeightInFeet +"."+ HeightInInches;
+      console.log(Height)
+      // convert feetinches into cms
+      var HeightinCMS=Height/0.032808;
+      console.log(HeightinCMS);
+
+      var Weight =document.getElementById("Weight").value;
+      console.log(Weight);
+      
+      var BMI= ((Weight/2.20462) / ((HeightinCMS * HeightinCMS) / 10000)).toFixed(2);
+      console.log(BMI);
+       document.getElementById("BMI").innerHTML=BMI;
+    }
+
+	</script>
+	
+
+	<title>
+		
+
+	</title>
+</head>
+<body style="background-color: orange;">
+	<h1>Kyle's Body Mass Index Calculator</h1>
+
+	<br>
+	<br>
+	<br>
+<div class="container" class="w-100">
+	
+	<div class="row">
+
+		<div class="col-md-4">
+			<img src="images/BODYMASSINDEX.png" class="float-left">
+		</div>
+
+		<div class="col-md-4">
+
+		</div>
+
+		<div class="col-md-4">
+
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="row">
+
+		<div class="col-md-1">
+			<label for="firstName"><b>First Name</b></label>
+    		<br>
+    		<br>
+    		<br>
+    		<label for="lastName"><b>Last Name</b></label>
+		</div>
+
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+			<br>
+			<input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+		</div>
+
+		<div class="col-md-8">
+			 <label style="text-align: right;"><b>Your BMI is:</b></label> <label id="BMI"></label>
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+
+		<div class="col-md-1">
+			<label for="Height"><b>Height</b></label>
+		</div>
+		
+		<div class="col-md-1">
+			<input type="text" class="form-control" id="HeightFeet" placeholder="Feet">
+		</div>
+
+		<div class="col-md-1">
+			<input type="text" class="form-control" id="HeightInches" placeholder="Inches">
+		</div>
+
+		<div class="col-md-9">
+
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+
+		<div class="col-md-1">
+			<label for="weight"><b>Weight</b></label>
+		</div>
+
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="Weight" placeholder="Pounds">
+		</div>
+
+		<div class="col-md-8" id="result">
+
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+	
+	<div class="row">
+
+		<div class="col-md-1">
+			
+		</div>
+
+		<div class="col-md-3">
+			<button type="submit" class="btn btn-primary" onclick="CalculateBMI()">Calculate BMI</button>
+		</div>
+
+		<div class="col-md-8">
+
+		</div>
+
+	</div>
+
+
+	
+
+
+
+</div>
+
+</body>
+</html>
