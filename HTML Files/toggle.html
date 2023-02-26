@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	<title></title>
+    <script>
+        function myfunction1() {
+            var x = document.getElementById("toggle1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myfunction2() {
+            var x = document.getElementById("toggle2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myfunction3() {
+            var x = document.getElementById("toggle3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    
+<div class="container" style="width: 40%; margin-top: 100px;">
+    
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+    </div>
+    
+    <br>
+
+    <div class="row border">
+        <div class="col-md-8">
+            <p><b>Do you Support all Major Credit Cards?</b></p>
+        </div>
+        <div class="col-md-4">
+            <button onclick="myfunction1()" ><img src="images/plusplus.svg"  alt="toggle"></button>
+            <div id="toggle1">
+                This is information about how to use the toggle function in javascript. Hopefully this works.
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row border">
+        <div class="col-md-8">
+            <p><b>How long until i receive my order?</b></p>
+        </div>
+        <div class="col-md-4">
+            <button onclick="myfunction2()" ><img src="images/plusplus.svg"  alt="toggle"></button>
+            <div id="toggle2">
+                This is information about how to use the toggle function in javascript. Hopefully this works.
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row border">
+        <div class="col-md-8">
+            <p><b>Do you have a return policy?</b></p>
+        </div>
+        <div class="col-md-4">
+            <button onclick="myfunction3()" ><img src="images/plusplus.svg"  alt="toggle"></button>
+            <div id="toggle3">
+                This is information about how to use the toggle function in javascript. Hopefully this works.
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
